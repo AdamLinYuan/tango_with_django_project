@@ -42,3 +42,24 @@ TwD TEST FAILURE =(
 ================
 Checks for the top five pages in the index() view's response failed. Check you are using the correct list of objects, the correct HTML markup, and try again. '<li>(\s*|\n*)<a(\s+)href(\s*)=(\s*)("http://docs.python.org/3/tutorial/"|\'http://docs.python.org/3/tutorial/\')(\s*)>(\s*|\n*)Official Python Tutorial(\s*|\n*)</a>(\s*|\n*)</li>'
 
+Chapter 9 fails:
+
+================
+TwD TEST FAILURE =(
+================
+When not logged in and attempting to add a page, we should be redirected. But we weren't. Check your add_page() implementation.
+
+================
+TwD TEST FAILURE =(
+================
+When attempting to add a category when not logged in, we weren't redirected to the login view. Check your add_category() implementation, and try again.
+
+================
+TwD TEST FAILURE =(
+================
+When a successful registration occurs, we couldn't find the expected success message. Check your implementation of register.html, and try again.
+
+================
+TwD TEST FAILURE =(
+================
+We tried to access the restricted view when not logged in, and were expecting to be redirected to the login view. But we were not! Please check your restricted() view.
